@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Actualiza a la última versión estable
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4  # Actualiza a la última versión estable
         with:
-          node-version: '20'  # Puedes usar la versión que prefieras
+          node-version: '20'  # Usa Node.js 20, que es la versión más reciente y recomendada
 
       - name: Install dependencies
         run: npm install
